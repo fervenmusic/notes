@@ -1,0 +1,382 @@
+:root{
+    --primary-color: white;
+    --secondary-color: #222;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Raleway;
+    box-sizing: inherit;
+    padding-top:65px;
+    background-color: var(--secondary-color);
+}
+
+.add-color {
+    filter: invert(79%) sepia(22%) saturate(2264%) hue-rotate(356deg) brightness(97%) contrast(94%);
+}
+
+.icon-size {
+    height: 30px;
+    width: 30px;
+}
+
+.icon-size:hover {
+    filter: invert(79%) sepia(22%) saturate(2264%) hue-rotate(356deg) brightness(97%) contrast(94%);}
+
+.icon-delete {
+    height: 30px;
+    width: 30px;
+}
+
+.icon-delete:hover {
+    filter: invert(79%) sepia(22%) saturate(2264%) hue-rotate(356deg) brightness(97%) contrast(94%);}
+
+.header {
+    width: 100%;
+    height: 65px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    scroll-padding-top: 10%;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 1px var(--primary-color);
+}
+
+header {
+    box-shadow: 0px 0px 1px var(--primary-color);
+    font-family: Raleway;
+}
+
+.header img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+#title {
+    font-size:larger;
+}
+
+.searchbar {
+    border-radius: 5px;
+    text-decoration: none;
+    width: 400px;
+    height: 30px;
+    border:none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.searchbar::placeholder {
+    font-family: Raleway;
+    color: var(--secondary-color);
+    
+}
+
+textarea:focus, input:focus, .search-box:focus {
+    outline: none;
+}
+
+.search-box {
+    display:flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.search-box img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    padding-right: 10px;
+    color: var(--secondary-color);
+}
+
+.notebox {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin: 10px;
+    border: 7px solid var(--primary-color);
+    border-radius: 7px;
+}
+
+.notebox img {
+    height:30px;
+    width:30px;
+}
+
+.notebox, .notebar {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.notebar::placeholder {
+    color: var(--secondary-color);
+}
+
+.notes-main {
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--secondary-color);
+}
+
+.notebar {
+    border:none;
+    border-radius: 7px solid white;
+}
+
+textarea {
+    min-height: 200px;
+    min-width: 400px;
+    resize: none;
+    color: var(--secondary-color);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    left:0;
+    gap: 2rem;
+}
+
+.sidebar img:hover {
+    opacity: 70%;
+}
+
+.savedNote {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    min-height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+}
+
+.savedNote h2, span {
+    padding: 5px;
+    display: block;
+    overflow-wrap: break-word;
+    margin-bottom:5px;
+    color: var(--secondary-color);
+}
+
+.savedNote button {
+    display:flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+.savedNotes {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-left:65px;
+    padding-right: 65px;
+    background-color: var(--secondary-color);
+}
+
+.change-mode {
+    filter: invert(79%) sepia(22%) saturate(2264%) hue-rotate(356deg) brightness(97%) contrast(94%);
+}
+
+.change-mode:hover {
+    filter: invert(79%) sepia(22%) saturate(2264%) hue-rotate(356deg) brightness(37%) contrast(94%);
+
+}
+
+.change-mode img {
+    height: 30px;
+    width: 30px;
+    margin-right:10px;
+}
+
+.savebutton {
+    display:flex;
+    justify-content: flex-end;
+}
+
+#title, #takenote {
+    background-color: var(--primary-color);
+}
+
+.deletebutton {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    padding-top: 5px;
+    margin-top: auto;
+    border-top: 1px solid rgb(106, 106, 106);
+}
+
+.burger {
+    display: none;
+}
+
+.sidebar-mobile {
+    display:none;
+    justify-content: space-around;
+    position: fixed;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index: 999;
+    scroll-padding-bottom: 10%;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 1px var(--primary-color);
+    padding:10px;
+}
+
+.dark-mode {
+    --primary-color: white;
+    --secondary-color: #222;
+}
+
+.bright-mode {
+    --primary-color: #505050;
+    --secondary-color: white;
+}
+
+.demo {
+    color: var(--primary-color);
+    text-align: center;
+    opacity: 50%;
+    margin-top: 80px;
+}
+
+@media (max-width: 666px) {
+    .searchbar {
+        width: 200px;
+    }
+
+    .burger {
+        display: unset;
+    }
+
+    .sidebar {
+        display:none;
+    }
+
+    textarea {
+        min-height: unset;
+        min-width: unset;
+    }
+
+    .savedNotes {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sidebar {
+        position:absolute;
+        top:0;
+        right:0;
+        z-index: 10000;
+    }
+    
+    .sidebar-mobile {
+        display:flex;
+    }
+
+    body {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 500px) {
+    .savedNote {
+        width: 270px;
+        min-height: unset;
+    }
+
+    .searchbar {
+        width: 100px;
+    }
+    
+    .sidebar-mobile img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* raleway-200 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    src: url('fonts/raleway-v28-latin-200.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('fonts/raleway-v28-latin-200.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/raleway-v28-latin-200.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/raleway-v28-latin-200.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/raleway-v28-latin-200.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/raleway-v28-latin-200.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}
+
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/raleway-v28-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('fonts/raleway-v28-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/raleway-v28-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/raleway-v28-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/raleway-v28-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/raleway-v28-latin-regular.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}
+
+/* raleway-700 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/raleway-v28-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('fonts/raleway-v28-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/raleway-v28-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/raleway-v28-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/raleway-v28-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/raleway-v28-latin-700.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}

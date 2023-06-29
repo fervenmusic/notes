@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="icon" href="img/favicon.ico" type="image/icon type">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="render()">
+    <header>
+        <div class="header">
+
+            <a href="#"><img src="img/icon.png" class="notes-img"></a>
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="Search" class="searchbar" id="searchInput" oninput="searchNotes()">
+            </div>
+            <div class="change-mode">
+                <a href="#"><img src="img/darkmode.png" class="hide" onclick="darkMode()" id="darkmode"></a>
+                <a href="#"><img src="img/brightmode1.png"  onclick="brightMode()" id="brightmode"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="notes-main">
+        <div class="sidebar">
+            <div id="notez">
+                <a href="#" onclick="showNotes()"><img src="img/notes.png"></a>
+            </div>
+            <div id="trash">
+                <a href="#" onclick="showDeletedNotes()"><img src="img/trash.png"></a>
+            </div>
+        </div>
+
+        <div class="notebox" id="notebox">
+            <!-- <input type="text" placeholder="Take a note..."> -->
+            <input type="text" placeholder="\\ Title " class="notebar" id="title">
+            <textarea type="text" placeholder="\\ Take a note..." class="notebar" id="takenote"></textarea>
+            <div class="savebutton">
+                <a href="#" onclick="addNote()"><img src="img/save.svg" class="icon-size"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="savedNotes" class="savedNotes">
+
+    </div>
+
+    <div class="sidebar-mobile">
+        <div id="notez-mobile">
+            <a href="#" onclick="showNotes()"><img src="img/notes.png"></a>
+        </div>
+        <div id="trash-mobile">
+            <a href="#" onclick="showDeletedNotes()"><img src="img/trash.png"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
